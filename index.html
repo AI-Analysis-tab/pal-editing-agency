@@ -1,678 +1,358 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-<title>Pal Editing Agency — Premium Video & AI Content Studio</title>
-<meta name="description" content="We don't just edit videos — we create content that helps brands grow. Video ads, AI video production, short-form content. Fast delivery, real results.">
-<meta name="keywords" content="video editing, video ads, AI video, TikTok ads, Meta ads, short form content, freelance video editor">
-<meta property="og:title" content="Pal Editing Agency">
-<meta property="og:description" content="Premium video editing and AI content studio for brands and creators worldwide.">
-<meta property="og:type" content="website">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pal Editing Agency | Premium Video Ads</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="bg-slate-950 text-slate-50 font-sans selection:bg-cyan-500/30 selection:text-white overflow-x-hidden">
 
-<div class="cur" id="cur"></div>
-<div class="cur-r" id="cur-r"></div>
-
-<!-- MOBILE MENU -->
-<div class="mob" id="mob">
-  <button class="mob-x" id="mob-x">✕</button>
-  <a href="#services">Services</a>
-  <a href="#tools">Our Tools</a>
-  <a href="#portfolio">Portfolio</a>
-  <a href="#about">About</a>
-  <a href="#pricing">Pricing</a>
-  <a href="https://www.upwork.com/freelancers/~01064a0e6a2c24bf97" target="_blank" class="btn btn-g" style="margin-top:6px">Hire on Upwork</a>
-</div>
-
-<!-- NAV -->
-<nav id="nav">
-  <div class="wrap">
-    <div class="nav-i">
-      <a href="#" class="logo">Pal<em>Editing</em></a>
-      <ul class="nav-lk">
-        <li><a href="#services">Services</a></li>
-        <li><a href="#tools">Tools</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#pricing">Pricing</a></li>
-      </ul>
-      <div class="nav-ct">
-        <a href="https://www.upwork.com/freelancers/~01064a0e6a2c24bf97" target="_blank" class="btn btn-o" style="padding:8px 18px;font-size:12.5px">Hire on Upwork</a>
-        <a href="#pricing" class="btn btn-p" style="padding:8px 18px;font-size:12.5px">Get Started →</a>
-      </div>
-      <button class="ham" id="ham" aria-label="Menu"><span></span><span></span><span></span></button>
-    </div>
-  </div>
-</nav>
-
-<!-- HERO -->
-<section id="hero">
-  <div class="h-bg"></div>
-  <div class="h-grid"></div>
-  <div class="orb" style="width:480px;height:480px;top:-60px;right:-60px;background:rgba(0,200,255,.09)"></div>
-  <div class="orb" style="width:400px;height:400px;bottom:-40px;left:-50px;background:rgba(139,92,246,.08)"></div>
-  <div class="wrap h-cont">
-    <div class="badge"><span class="dot"></span>Video Editing & AI Content Studio</div>
-    <h1 class="h-t1">
-      We Create Content<br>That Helps<br>
-      <span class="gt">Brands Grow</span>
-    </h1>
-    <p class="h-sub">
-      We don't just edit videos — we create content that helps brands grow.
-      Fast delivery, clear communication, and results-driven editing.
-    </p>
-    <div class="h-acts">
-      <a href="#portfolio" class="btn btn-p">View Our Work →</a>
-      <a href="https://www.upwork.com/freelancers/~01064a0e6a2c24bf97" target="_blank" class="btn btn-g">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15,3 21,3 21,9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-        Hire on Upwork
-      </a>
-    </div>
-    <div class="h-tags">
-      <span class="h-tag"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Secure Upwork Payment</span>
-      <span class="h-tag"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>48h Fast Delivery</span>
-      <span class="h-tag"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>AI-Powered Production</span>
-    </div>
-    <div class="stats-row">
-      <div class="stat"><div class="n" id="s1">50+</div><div class="l">Projects Completed</div></div>
-      <div class="stat"><div class="n" id="s2">10+</div><div class="l">International Clients</div></div>
-      <div class="stat"><div class="n" id="s3">100K+</div><div class="l">Views Generated</div></div>
-      <div class="stat"><div class="n" id="s4">5.0★</div><div class="l">Upwork Rating</div></div>
-    </div>
-  </div>
-</section>
-
-<!-- MARQUEE -->
-<div class="mq">
-  <div class="mq-t">
-    <div class="mq-i"><span class="ic">✦</span>Veo 3.1</div>
-    <div class="mq-i"><span class="ic">✦</span>Sora 2</div>
-    <div class="mq-i"><span class="ic">✦</span>Kling AI</div>
-    <div class="mq-i"><span class="ic">✦</span>Seedance 2.0</div>
-    <div class="mq-i"><span class="ic">✦</span>Gemini AI</div>
-    <div class="mq-i"><span class="ic">✦</span>Claude</div>
-    <div class="mq-i"><span class="ic">✦</span>ChatGPT</div>
-    <div class="mq-i"><span class="ic">✦</span>n8n Automation</div>
-    <div class="mq-i"><span class="ic">✦</span>GitHub</div>
-    <div class="mq-i"><span class="ic">✦</span>Premiere Pro</div>
-    <div class="mq-i"><span class="ic">✦</span>After Effects</div>
-    <div class="mq-i"><span class="ic">✦</span>DaVinci Resolve</div>
-    <!-- duplicate -->
-    <div class="mq-i"><span class="ic">✦</span>Veo 3.1</div>
-    <div class="mq-i"><span class="ic">✦</span>Sora 2</div>
-    <div class="mq-i"><span class="ic">✦</span>Kling AI</div>
-    <div class="mq-i"><span class="ic">✦</span>Seedance 2.0</div>
-    <div class="mq-i"><span class="ic">✦</span>Gemini AI</div>
-    <div class="mq-i"><span class="ic">✦</span>Claude</div>
-    <div class="mq-i"><span class="ic">✦</span>ChatGPT</div>
-    <div class="mq-i"><span class="ic">✦</span>n8n Automation</div>
-    <div class="mq-i"><span class="ic">✦</span>GitHub</div>
-    <div class="mq-i"><span class="ic">✦</span>Premiere Pro</div>
-    <div class="mq-i"><span class="ic">✦</span>After Effects</div>
-    <div class="mq-i"><span class="ic">✦</span>DaVinci Resolve</div>
-  </div>
-</div>
-
-<!-- SERVICES -->
-<section id="services">
-  <div class="orb" style="width:340px;height:340px;top:40%;right:-60px;background:rgba(0,200,255,.07)"></div>
-  <div class="wrap">
-    <div class="sec-h rev">
-      <div class="lbl">Services</div>
-      <h2>What We Create<br>For You</h2>
-      <p>We don't just edit videos — we create content that helps brands grow.</p>
-    </div>
-    <div class="sgrid">
-      <div class="sc rev d1">
-        <div class="sico" style="background:linear-gradient(135deg,#00c8ff,#0080ff)">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
-        </div>
-        <h3>Video Ads Creation</h3>
-        <p>Stop the scroll with engaging ad creatives that drive real clicks and sales.</p>
-        <ul class="sf">
-          <li>Direct response editing</li>
-          <li>Strong hook creation</li>
-          <li>UGC-style video ads</li>
-        </ul>
-        <div class="stags">
-          <span class="tg" style="background:rgba(0,200,255,.08);border:1px solid rgba(0,200,255,.15);color:var(--blue)">Meta Ads</span>
-          <span class="tg" style="background:rgba(0,200,255,.08);border:1px solid rgba(0,200,255,.15);color:var(--blue)">YouTube</span>
-          <span class="tg" style="background:rgba(0,200,255,.08);border:1px solid rgba(0,200,255,.15);color:var(--blue)">TikTok</span>
-        </div>
-      </div>
-      <div class="sc rev d2">
-        <div class="sico" style="background:linear-gradient(135deg,#8b5cf6,#c026d3)">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
-        </div>
-        <h3>AI Video Production</h3>
-        <p>Create videos faster using AI tools — premium output at a fraction of cost.</p>
-        <ul class="sf">
-          <li>AI avatars & voiceovers</li>
-          <li>Script to video workflow</li>
-          <li>Automated content creation</li>
-        </ul>
-        <div class="stags">
-          <span class="tg" style="background:rgba(139,92,246,.08);border:1px solid rgba(139,92,246,.18);color:var(--purple)">AI Avatar</span>
-          <span class="tg" style="background:rgba(139,92,246,.08);border:1px solid rgba(139,92,246,.18);color:var(--purple)">AI Voice</span>
-          <span class="tg" style="background:rgba(139,92,246,.08);border:1px solid rgba(139,92,246,.18);color:var(--purple)">GenAI</span>
-        </div>
-      </div>
-      <div class="sc rev d3">
-        <div class="sico" style="background:linear-gradient(135deg,#f472b6,#f97316)">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-        </div>
-        <h3>Short Form Content</h3>
-        <p>High-retention reels & shorts that keep viewers watching until the end.</p>
-        <ul class="sf">
-          <li>Fast-paced editing</li>
-          <li>Subtitles & captions</li>
-          <li>Platform optimization</li>
-        </ul>
-        <div class="stags">
-          <span class="tg" style="background:rgba(244,114,182,.08);border:1px solid rgba(244,114,182,.18);color:var(--pink)">Reels</span>
-          <span class="tg" style="background:rgba(244,114,182,.08);border:1px solid rgba(244,114,182,.18);color:var(--pink)">Shorts</span>
-          <span class="tg" style="background:rgba(244,114,182,.08);border:1px solid rgba(244,114,182,.18);color:var(--pink)">TikTok</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===== TOOLS WE USE ===== -->
-<section id="tools">
-  <div class="orb" style="width:400px;height:400px;top:20%;left:-80px;background:rgba(124,58,237,.07)"></div>
-  <div class="orb" style="width:300px;height:300px;bottom:10%;right:-60px;background:rgba(0,200,255,.06)"></div>
-  <div class="wrap">
-    <div class="sec-h rev center">
-      <div class="lbl">Our Toolkit</div>
-      <h2>Powered by the<br><span class="gt">Latest AI Tools</span></h2>
-      <p>We use cutting-edge AI and professional tools to deliver next-level results faster and better than traditional editing.</p>
-    </div>
-
-    <div class="tools-cats">
-
-      <!-- AI VIDEO GENERATION -->
-      <div class="rev">
-        <div class="tool-cat-label">
-          <div style="width:32px;height:32px;background:linear-gradient(135deg,#7c3aed,#c026d3);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:15px;flex-shrink:0">🎬</div>
-          <h3>AI Video Generation</h3>
-          <div class="tool-cat-line"></div>
-        </div>
-        <div class="tools-row">
-          <div class="tool-card ai-gen">
-            <span class="tool-badge new">NEW</span>
-            <div class="tool-icon">
-              <img src="images/veo.svg" alt="Veo" width="28" height="28" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
-              <span style="display:none;font-size:22px">🎥</span>
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-slate-950/80 backdrop-blur-md py-4 md:py-6 border-b border-white/5">
+        <div class="container mx-auto px-4 md:px-6 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-cyan-400 to-purple-600 flex items-center justify-center font-bold text-white shadow-[0_0_15px_rgba(34,211,238,0.5)]">P</div>
+                <span class="text-lg md:text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-400 tracking-tight">
+                    Pal Editing.
+                </span>
             </div>
-            <div class="tool-name">Veo 3.1</div>
-            <div class="tool-desc">Google's most advanced AI video model</div>
-          </div>
-          <div class="tool-card ai-gen">
-            <span class="tool-badge new">NEW</span>
-            <div class="tool-icon">🌀</div>
-            <div class="tool-name">Sora 2</div>
-            <div class="tool-desc">OpenAI cinematic video generation</div>
-          </div>
-          <div class="tool-card ai-gen">
-            <span class="tool-badge pro">PRO</span>
-            <div class="tool-icon">⚡</div>
-            <div class="tool-name">Kling AI</div>
-            <div class="tool-desc">High-quality AI video & motion</div>
-          </div>
-          <div class="tool-card ai-gen">
-            <span class="tool-badge new">NEW</span>
-            <div class="tool-icon">🌱</div>
-            <div class="tool-name">Seedance 2.0</div>
-            <div class="tool-desc">ByteDance's AI video generation</div>
-          </div>
-        </div>
-      </div>
+            
+            <div class="hidden lg:flex items-center gap-8 text-sm font-medium text-gray-300">
+                <a href="#portfolio" class="hover:text-cyan-400 transition-colors">Portfolio</a>
+                <a href="#services" class="hover:text-purple-400 transition-colors">Services</a>
+                <a href="#tech" class="hover:text-blue-400 transition-colors">Tech Stack</a>
+                <a href="#pricing" class="hover:text-purple-400 transition-colors">Pricing</a>
+            </div>
 
-      <!-- AI IMAGE & DESIGN -->
-      <div class="rev d1">
-        <div class="tool-cat-label">
-          <div style="width:32px;height:32px;background:linear-gradient(135deg,#0ea5e9,#2563eb);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:15px;flex-shrink:0">🖼️</div>
-          <h3>AI Image & Design</h3>
-          <div class="tool-cat-line"></div>
+            <div class="flex items-center gap-3 md:gap-4">
+                <a href="https://www.upwork.com/freelancers/~01064a0e6a2c24bf97" target="_blank" class="hidden md:flex items-center gap-2 text-sm font-semibold text-[#14a800] hover:text-[#14a800]/80 transition-colors">
+                    <i data-lucide="shield-check" class="w-4 h-4"></i> Upwork Verified
+                </a>
+                <a href="https://wa.me/YOUR_PHONE_NUMBER_HERE" target="_blank" class="flex items-center gap-2 px-4 py-2 md:px-5 md:py-2.5 rounded-full bg-green-500 hover:bg-green-400 text-slate-950 font-bold transition-all shadow-[0_0_20px_rgba(34,197,94,0.3)] text-sm md:text-base">
+                    <i class="fa-brands fa-whatsapp text-lg"></i> <span class="hidden sm:inline">WhatsApp</span>
+                </a>
+            </div>
         </div>
-        <div class="tools-row">
-          <div class="tool-card img-ai">
-            <span class="tool-badge pro">PRO</span>
-            <div class="tool-icon">✨</div>
-            <div class="tool-name">Gemini AI</div>
-            <div class="tool-desc">Google's multimodal AI for images & content</div>
-          </div>
-          <div class="tool-card img-ai">
-            <div class="tool-icon">🎨</div>
-            <div class="tool-name">Midjourney</div>
-            <div class="tool-desc">Stunning AI image generation</div>
-          </div>
-          <div class="tool-card img-ai">
-            <div class="tool-icon">🖌️</div>
-            <div class="tool-name">DALL·E 3</div>
-            <div class="tool-desc">OpenAI image creation & editing</div>
-          </div>
-          <div class="tool-card img-ai">
-            <div class="tool-icon">🔮</div>
-            <div class="tool-name">Stable Diffusion</div>
-            <div class="tool-desc">Custom AI image workflows</div>
-          </div>
+    </nav>
+
+    <section class="relative min-h-[100svh] flex items-center justify-center overflow-hidden pt-24 pb-16 md:pt-32">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-slate-950/80 z-10 mix-blend-multiply"></div>
+            <div class="absolute inset-0 bg-gradient-to-b from-slate-950/20 via-slate-950/60 to-slate-950 z-10"></div>
+            <video autoplay loop muted playsinline class="w-full h-full object-cover opacity-50 scale-105">
+                <source src="https://cdn.pixabay.com/video/2023/10/22/186009-876930514_large.mp4" type="video/mp4">
+            </video>
         </div>
-      </div>
 
-      <!-- VIDEO EDITING -->
-      <div class="rev d2">
-        <div class="tool-cat-label">
-          <div style="width:32px;height:32px;background:linear-gradient(135deg,#f97316,#ef4444);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:15px;flex-shrink:0">✂️</div>
-          <h3>Video Editing</h3>
-          <div class="tool-cat-line"></div>
+        <div class="container relative z-20 mx-auto px-4 text-center">
+            <div class="inline-flex items-center gap-2 px-3 py-1.5 md:px-4 md:py-2 rounded-full bg-white/5 border border-white/10 backdrop-blur-md mb-6 md:mb-8">
+                <span class="w-2 h-2 rounded-full bg-cyan-500 animate-pulse"></span>
+                <span class="text-xs md:text-sm font-medium text-gray-300 tracking-wide">High-converting video ads</span>
+            </div>
+            
+            <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-white tracking-tighter mb-4 md:mb-6 max-w-5xl mx-auto leading-[1.1]">
+                We Turn Your Ads Into <br/>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500">
+                    Money Machines
+                </span>
+            </h1>
+            
+            <p class="text-base sm:text-lg md:text-2xl text-gray-300 max-w-2xl mx-auto mb-8 md:mb-10 font-medium px-4">
+                We don’t just edit videos — <span class="text-cyan-400 font-bold border-b border-cyan-400/50 pb-1">we create content that helps brands grow.</span>
+            </p>
+            
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 px-4 w-full sm:w-auto">
+                <a href="#portfolio" class="w-full sm:w-auto px-6 py-3.5 md:px-8 md:py-4 rounded-full bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-bold text-base md:text-lg hover:shadow-[0_0_30px_rgba(6,182,212,0.4)] transition-all duration-300 hover:-translate-y-1 flex items-center justify-center gap-2">
+                    View Portfolio <i data-lucide="play" class="w-5 h-5 fill-current"></i>
+                </a>
+                <a href="https://www.upwork.com/freelancers/~01064a0e6a2c24bf97" target="_blank" class="w-full sm:w-auto px-6 py-3.5 md:px-8 md:py-4 rounded-full bg-slate-900 border border-white/10 text-white font-bold text-base md:text-lg hover:bg-slate-800 transition-all duration-300 flex items-center justify-center gap-2 group hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(20,168,0,0.2)]">
+                    Hire on Upwork <span class="text-[#14a800]"><i data-lucide="shield-check" class="w-5 h-5"></i></span>
+                </a>
+            </div>
         </div>
-        <div class="tools-row">
-          <div class="tool-card vid-edit">
-            <span class="tool-badge pro">PRO</span>
-            <div class="tool-icon">🎞️</div>
-            <div class="tool-name">Premiere Pro</div>
-            <div class="tool-desc">Industry-standard professional editing</div>
-          </div>
-          <div class="tool-card vid-edit">
-            <span class="tool-badge pro">PRO</span>
-            <div class="tool-icon">🌈</div>
-            <div class="tool-name">DaVinci Resolve</div>
-            <div class="tool-desc">Hollywood-grade color grading</div>
-          </div>
-          <div class="tool-card vid-edit">
-            <div class="tool-icon">💫</div>
-            <div class="tool-name">After Effects</div>
-            <div class="tool-desc">Motion graphics & VFX</div>
-          </div>
-          <div class="tool-card vid-edit">
-            <div class="tool-icon">⚡</div>
-            <div class="tool-name">CapCut Pro</div>
-            <div class="tool-desc">Fast short-form content editing</div>
-          </div>
+    </section>
+
+    <div class="relative z-30 -mt-12 md:-mt-20 container mx-auto px-4 md:px-6">
+        <div class="bg-slate-900/80 backdrop-blur-xl border border-white/10 rounded-2xl p-4 md:p-8 grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 shadow-2xl">
+            <div class="text-center md:text-left flex flex-col md:flex-row items-center md:items-start gap-2 md:gap-4">
+                <div class="w-8 h-8 md:w-12 md:h-12 rounded-xl bg-white/5 flex items-center justify-center shrink-0 shadow-[0_0_15px_rgba(255,255,255,0.05)]">
+                    <i data-lucide="film" class="text-cyan-400 w-4 h-4 md:w-6 md:h-6"></i>
+                </div>
+                <div>
+                    <div class="text-lg md:text-3xl font-black text-white">50+</div>
+                    <div class="text-[9px] md:text-sm text-gray-400 font-medium uppercase tracking-wider mt-1">Projects</div>
+                </div>
+            </div>
+            <div class="text-center md:text-left flex flex-col md:flex-row items-center md:items-start gap-2 md:gap-4">
+                <div class="w-8 h-8 md:w-12 md:h-12 rounded-xl bg-white/5 flex items-center justify-center shrink-0 shadow-[0_0_15px_rgba(255,255,255,0.05)]">
+                    <i data-lucide="globe" class="text-purple-400 w-4 h-4 md:w-6 md:h-6"></i>
+                </div>
+                <div>
+                    <div class="text-lg md:text-3xl font-black text-white">10+</div>
+                    <div class="text-[9px] md:text-sm text-gray-400 font-medium uppercase tracking-wider mt-1">Countries</div>
+                </div>
+            </div>
+            <div class="text-center md:text-left flex flex-col md:flex-row items-center md:items-start gap-2 md:gap-4">
+                <div class="w-8 h-8 md:w-12 md:h-12 rounded-xl bg-white/5 flex items-center justify-center shrink-0 shadow-[0_0_15px_rgba(255,255,255,0.05)]">
+                    <i data-lucide="eye" class="text-green-400 w-4 h-4 md:w-6 md:h-6"></i>
+                </div>
+                <div>
+                    <div class="text-lg md:text-3xl font-black text-white">1M+</div>
+                    <div class="text-[9px] md:text-sm text-gray-400 font-medium uppercase tracking-wider mt-1">Views</div>
+                </div>
+            </div>
+            <div class="text-center md:text-left flex flex-col md:flex-row items-center md:items-start gap-2 md:gap-4">
+                <div class="w-8 h-8 md:w-12 md:h-12 rounded-xl bg-white/5 flex items-center justify-center shrink-0 shadow-[0_0_15px_rgba(255,255,255,0.05)]">
+                    <i data-lucide="zap" class="text-blue-400 w-4 h-4 md:w-6 md:h-6"></i>
+                </div>
+                <div>
+                    <div class="text-lg md:text-3xl font-black text-white">24h</div>
+                    <div class="text-[9px] md:text-sm text-gray-400 font-medium uppercase tracking-wider mt-1">Delivery</div>
+                </div>
+            </div>
         </div>
-      </div>
+    </div>
 
-      <!-- AI CODING & WEB APPS -->
-      <div class="rev d3">
-        <div class="tool-cat-label">
-          <div style="width:32px;height:32px;background:linear-gradient(135deg,#14a800,#059669);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:15px;flex-shrink:0">💻</div>
-          <h3>AI Coding & Web Apps</h3>
-          <div class="tool-cat-line"></div>
+    <section id="portfolio" class="py-16 md:py-24 bg-slate-950 relative">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="text-center max-w-3xl mx-auto mb-10 md:mb-16">
+                <h2 class="text-xs md:text-sm font-bold tracking-widest text-cyan-400 uppercase mb-2 md:mb-3">Our Work</h2>
+                <h3 class="text-2xl md:text-5xl font-black text-white">Latest High-Converting Ads.</h3>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+                <a href="https://drive.google.com/drive/folders/1RkxC5zSsMnT2c-MW1PvwNMusn213Jdk8" target="_blank" class="group relative aspect-[9/16] bg-slate-900 rounded-2xl overflow-hidden border border-white/10 hover:border-cyan-500/50 transition-all">
+                    <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=600&auto=format&fit=crop" class="w-full h-full object-cover opacity-70 group-hover:opacity-40 transition-opacity duration-500" alt="Short form edit">
+                    <div class="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="w-14 h-14 rounded-full bg-cyan-500 flex items-center justify-center text-slate-950 mb-3 shadow-[0_0_20px_rgba(6,182,212,0.6)]">
+                            <i data-lucide="play" class="w-6 h-6 fill-current"></i>
+                        </div>
+                        <span class="text-white font-bold text-lg">Watch Video</span>
+                    </div>
+                </a>
+                <a href="https://drive.google.com/drive/folders/19fNCD6UcTLBnC0hlseE9pwTcbjosBZwh" target="_blank" class="group relative aspect-[9/16] bg-slate-900 rounded-2xl overflow-hidden border border-white/10 hover:border-purple-500/50 transition-all">
+                    <img src="https://images.unsplash.com/photo-15df121175628-912c9c7193f4?q=80&w=600&auto=format&fit=crop" class="w-full h-full object-cover opacity-70 group-hover:opacity-40 transition-opacity duration-500" alt="UGC Ad">
+                    <div class="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="w-14 h-14 rounded-full bg-purple-500 flex items-center justify-center text-white mb-3 shadow-[0_0_20px_rgba(168,85,247,0.6)]">
+                            <i data-lucide="play" class="w-6 h-6 fill-current"></i>
+                        </div>
+                        <span class="text-white font-bold text-lg">Watch Video</span>
+                    </div>
+                </a>
+                <a href="https://drive.google.com/drive/folders/13lr2cm6lom48Af6mSB6up-6fuF3cYInx" target="_blank" class="group relative aspect-[9/16] sm:hidden lg:block bg-slate-900 rounded-2xl overflow-hidden border border-white/10 hover:border-blue-500/50 transition-all">
+                    <img src="https://images.unsplash.com/photo-1629705973792-5eb3264ec4d8?q=80&w=600&auto=format&fit=crop" class="w-full h-full object-cover opacity-70 group-hover:opacity-40 transition-opacity duration-500" alt="AI Video">
+                    <div class="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="w-14 h-14 rounded-full bg-blue-500 flex items-center justify-center text-white mb-3 shadow-[0_0_20px_rgba(59,130,246,0.6)]">
+                            <i data-lucide="play" class="w-6 h-6 fill-current"></i>
+                        </div>
+                        <span class="text-white font-bold text-lg">Watch Video</span>
+                    </div>
+                </a>
+            </div>
         </div>
-        <div class="tools-row">
-          <div class="tool-card code">
-            <span class="tool-badge pro">PRO</span>
-            <div class="tool-icon">🐙</div>
-            <div class="tool-name">GitHub</div>
-            <div class="tool-desc">Code versioning & project management</div>
-          </div>
-          <div class="tool-card code">
-            <div class="tool-icon">🤖</div>
-            <div class="tool-name">Claude</div>
-            <div class="tool-desc">AI coding, web apps & content</div>
-          </div>
-          <div class="tool-card code">
-            <div class="tool-icon">💬</div>
-            <div class="tool-name">ChatGPT</div>
-            <div class="tool-desc">Scripts, copy & AI strategy</div>
-          </div>
-          <div class="tool-card code">
-            <div class="tool-icon">🌐</div>
-            <div class="tool-name">Cursor AI</div>
-            <div class="tool-desc">AI-powered code editor</div>
-          </div>
+    </section>
+
+    <section id="services" class="py-16 md:py-24 bg-slate-950 relative border-t border-white/5">
+        <div class="container mx-auto px-4 md:px-6 reveal">
+            <div class="text-center max-w-3xl mx-auto mb-10 md:mb-16">
+                <h2 class="text-xs md:text-sm font-bold tracking-widest text-cyan-400 uppercase mb-2 md:mb-3">Core Expertise</h2>
+                <h3 class="text-2xl md:text-5xl font-black text-white">Services that drive results.</h3>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+                <div class="bg-slate-900 border border-white/5 p-6 md:p-8 rounded-3xl transition-all duration-500 hover:border-cyan-500/30">
+                    <div class="w-14 h-14 md:w-16 md:h-16 rounded-2xl bg-slate-950 border border-white/10 flex items-center justify-center mb-6 shadow-lg">
+                        <i data-lucide="film" class="text-cyan-400 w-6 h-6 md:w-8 md:h-8"></i>
+                    </div>
+                    <h4 class="text-xl md:text-2xl font-bold text-white mb-2">Video Ads Creation</h4>
+                    <p class="text-sm md:text-base text-gray-400 mb-6">Stop the scroll with engaging ad creatives.</p>
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-center gap-3 text-sm font-medium text-gray-300"><i data-lucide="check-circle-2" class="text-cyan-500 w-4 h-4 shrink-0"></i> Direct response editing</li>
+                        <li class="flex items-center gap-3 text-sm font-medium text-gray-300"><i data-lucide="check-circle-2" class="text-cyan-500 w-4 h-4 shrink-0"></i> Strong hook creation</li>
+                    </ul>
+                </div>
+
+                <div class="bg-slate-900 border border-white/5 p-6 md:p-8 rounded-3xl transition-all duration-500 hover:border-purple-500/30">
+                    <div class="w-14 h-14 md:w-16 md:h-16 rounded-2xl bg-slate-950 border border-white/10 flex items-center justify-center mb-6 shadow-lg">
+                        <i data-lucide="sparkles" class="text-purple-400 w-6 h-6 md:w-8 md:h-8"></i>
+                    </div>
+                    <h4 class="text-xl md:text-2xl font-bold text-white mb-2">AI Video Production</h4>
+                    <p class="text-sm md:text-base text-gray-400 mb-6">Create videos faster using state-of-the-art AI tools.</p>
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-center gap-3 text-sm font-medium text-gray-300"><i data-lucide="check-circle-2" class="text-purple-500 w-4 h-4 shrink-0"></i> AI avatars & voiceovers</li>
+                        <li class="flex items-center gap-3 text-sm font-medium text-gray-300"><i data-lucide="check-circle-2" class="text-purple-500 w-4 h-4 shrink-0"></i> Script to video workflow</li>
+                    </ul>
+                </div>
+
+                <div class="bg-slate-900 border border-white/5 p-6 md:p-8 rounded-3xl transition-all duration-500 hover:border-blue-500/30">
+                    <div class="w-14 h-14 md:w-16 md:h-16 rounded-2xl bg-slate-950 border border-white/10 flex items-center justify-center mb-6 shadow-lg">
+                        <i data-lucide="smartphone" class="text-blue-400 w-6 h-6 md:w-8 md:h-8"></i>
+                    </div>
+                    <h4 class="text-xl md:text-2xl font-bold text-white mb-2">Short Form Content</h4>
+                    <p class="text-sm md:text-base text-gray-400 mb-6">High-retention reels, TikToks & shorts.</p>
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-center gap-3 text-sm font-medium text-gray-300"><i data-lucide="check-circle-2" class="text-blue-500 w-4 h-4 shrink-0"></i> Fast-paced editing</li>
+                        <li class="flex items-center gap-3 text-sm font-medium text-gray-300"><i data-lucide="check-circle-2" class="text-blue-500 w-4 h-4 shrink-0"></i> Subtitles & captions</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-      </div>
+    </section>
 
-      <!-- AUTOMATION & WORKFLOW -->
-      <div class="rev d4">
-        <div class="tool-cat-label">
-          <div style="width:32px;height:32px;background:linear-gradient(135deg,#f59e0b,#d97706);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:15px;flex-shrink:0">⚙️</div>
-          <h3>Automation & Workflow</h3>
-          <div class="tool-cat-line"></div>
+    <section id="tech" class="py-16 md:py-24 bg-slate-900 relative border-y border-white/5">
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full md:w-[800px] h-[400px] bg-blue-900/10 blur-[120px] rounded-full pointer-events-none"></div>
+        <div class="container mx-auto px-4 md:px-6 relative z-10 reveal">
+            <div class="text-center max-w-3xl mx-auto mb-10 md:mb-16">
+                <h2 class="text-xs md:text-sm font-bold tracking-widest text-blue-400 uppercase mb-2 md:mb-3">Powered by Next-Gen Tools</h2>
+                <h3 class="text-2xl md:text-5xl font-black text-white">Our Tech Arsenal.</h3>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+                <div class="bg-slate-950/80 backdrop-blur-sm border border-white/10 p-5 md:p-6 rounded-2xl">
+                    <div class="flex items-center gap-3 mb-4 pb-4 border-b border-white/10">
+                        <div class="p-2 bg-white/5 rounded-lg"><i class="fa-solid fa-wand-magic-sparkles text-purple-400"></i></div>
+                        <h4 class="text-base md:text-lg font-bold text-white">AI Video Gen</h4>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1.5 bg-white/5 border border-white/5 rounded-full text-xs font-medium text-gray-300">Sora 2</span>
+                        <span class="px-3 py-1.5 bg-white/5 border border-white/5 rounded-full text-xs font-medium text-gray-300">Veo 3.1</span>
+                    </div>
+                </div>
+
+                <div class="bg-slate-950/80 backdrop-blur-sm border border-white/10 p-5 md:p-6 rounded-2xl">
+                    <div class="flex items-center gap-3 mb-4 pb-4 border-b border-white/10">
+                        <div class="p-2 bg-white/5 rounded-lg"><i class="fa-solid fa-video text-cyan-400"></i></div>
+                        <h4 class="text-base md:text-lg font-bold text-white">Pro Editing</h4>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1.5 bg-white/5 border border-white/5 rounded-full text-xs font-medium text-gray-300 flex items-center gap-1"><i class="fa-solid fa-clapperboard text-[#9999ff]"></i> Premiere Pro</span>
+                        <span class="px-3 py-1.5 bg-white/5 border border-white/5 rounded-full text-xs font-medium text-gray-300 flex items-center gap-1"><i class="fa-solid fa-compact-disc text-[#ff99ff]"></i> After Effects</span>
+                    </div>
+                </div>
+
+                <div class="bg-slate-950/80 backdrop-blur-sm border border-white/10 p-5 md:p-6 rounded-2xl">
+                    <div class="flex items-center gap-3 mb-4 pb-4 border-b border-white/10">
+                        <div class="p-2 bg-white/5 rounded-lg"><i class="fa-solid fa-eye text-blue-400"></i></div>
+                        <h4 class="text-base md:text-lg font-bold text-white">AI Vision</h4>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1.5 bg-white/5 border border-white/5 rounded-full text-xs font-medium text-gray-300">Gemini Pro</span>
+                        <span class="px-3 py-1.5 bg-white/5 border border-white/5 rounded-full text-xs font-medium text-gray-300">Midjourney v6</span>
+                    </div>
+                </div>
+
+                <div class="bg-slate-950/80 backdrop-blur-sm border border-white/10 p-5 md:p-6 rounded-2xl">
+                    <div class="flex items-center gap-3 mb-4 pb-4 border-b border-white/10">
+                        <div class="p-2 bg-white/5 rounded-lg"><i class="fa-brands fa-github text-green-400"></i></div>
+                        <h4 class="text-base md:text-lg font-bold text-white">Workflow</h4>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1.5 bg-white/5 border border-white/5 rounded-full text-xs font-medium text-gray-300 flex items-center gap-1"><i class="fa-brands fa-github"></i> GitHub</span>
+                        <span class="px-3 py-1.5 bg-white/5 border border-white/5 rounded-full text-xs font-medium text-gray-300 flex items-center gap-1">ChatGPT Plus</span>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="tools-row">
-          <div class="tool-card auto">
-            <span class="tool-badge pro">PRO</span>
-            <div class="tool-icon">🔗</div>
-            <div class="tool-name">n8n</div>
-            <div class="tool-desc">Workflow automation & AI agents</div>
-          </div>
-          <div class="tool-card auto">
-            <div class="tool-icon">📋</div>
-            <div class="tool-name">Make.com</div>
-            <div class="tool-desc">Visual automation workflows</div>
-          </div>
-          <div class="tool-card auto">
-            <div class="tool-icon">📁</div>
-            <div class="tool-name">Google Drive</div>
-            <div class="tool-desc">File delivery & collaboration</div>
-          </div>
-          <div class="tool-card auto">
-            <div class="tool-icon">💬</div>
-            <div class="tool-name">Slack</div>
-            <div class="tool-desc">Direct client communication</div>
-          </div>
+    </section>
+
+    <section id="about" class="py-16 md:py-24 bg-slate-950 relative overflow-hidden">
+        <div class="container mx-auto px-4 md:px-6 reveal">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-16 items-center max-w-6xl mx-auto">
+                <div class="relative order-2 lg:order-1 px-4 sm:px-0">
+                    <div class="absolute inset-0 bg-cyan-500/20 blur-3xl rounded-full"></div>
+                    <div class="relative bg-slate-900 rounded-3xl overflow-hidden border border-white/10 shadow-2xl group max-w-sm sm:max-w-md mx-auto lg:max-w-none">
+                        <img src="https://images.unsplash.com/photo-1556157382-97eda2d62296?auto=format&fit=crop&q=80&w=800" alt="Khokon - Founder" class="w-full aspect-[4/5] object-cover opacity-90 group-hover:scale-105 transition-transform duration-700" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 w-full p-5 md:p-8">
+                            <h4 class="text-2xl md:text-3xl font-black text-white mb-1">Khokon</h4>
+                            <p class="text-cyan-400 font-bold mb-3 md:mb-4 uppercase tracking-wider text-[10px] md:text-xs">Founder & Video Editor</p>
+                            <div class="bg-white/5 border border-white/10 p-3 md:p-4 rounded-xl backdrop-blur-sm">
+                                <p class="text-gray-300 text-[11px] md:text-sm leading-relaxed italic">
+                                    "I help brands and creators grow through powerful video content. I focus on storytelling, audience psychology, and high-converting edits."
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="order-1 lg:order-2 text-center lg:text-left">
+                    <h2 class="text-xs md:text-sm font-bold tracking-widest text-purple-400 uppercase mb-2 md:mb-3">Who We Are</h2>
+                    <h3 class="text-2xl md:text-5xl font-black text-white mb-4 md:mb-8">We engineer growth through creatives.</h3>
+                    
+                    <div class="space-y-4 md:space-y-6 text-gray-300 text-sm md:text-lg leading-relaxed px-4 sm:px-0">
+                        <p>We are <span class="text-white font-bold">Pal Editing Agency</span>, focused on creating high-quality video content for brands, creators, and businesses.</p>
+                        <p>Our goal is simple — <span class="text-cyan-400 font-bold">help our clients grow</span> with engaging, high-converting videos.</p>
+                    </div>
+
+                    <div class="mt-8 md:mt-10">
+                        <a href="https://www.upwork.com/freelancers/~01064a0e6a2c24bf97" target="_blank" class="inline-flex items-center gap-3 px-6 py-3.5 md:px-8 md:py-4 rounded-full bg-[#14a800] hover:bg-[#14a800]/90 text-white font-bold transition-all shadow-[0_0_20px_rgba(20,168,0,0.3)] hover:-translate-y-1 text-sm md:text-base">
+                            Hire Me on Upwork <i data-lucide="external-link" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
+    </section>
 
-    </div><!-- end tools-cats -->
-  </div>
-</section>
+    <section id="pricing" class="py-16 md:py-24 bg-slate-900 relative border-t border-white/5">
+        <div class="container mx-auto px-4 md:px-6 reveal">
+            <div class="text-center max-w-3xl mx-auto mb-10 md:mb-16">
+                <h2 class="text-xs md:text-sm font-bold tracking-widest text-cyan-400 uppercase mb-2 md:mb-3">Transparent Pricing</h2>
+                <h3 class="text-2xl md:text-5xl font-black text-white">Choose your growth path.</h3>
+            </div>
 
-<!-- PORTFOLIO -->
-<section id="portfolio">
-  <div class="wrap">
-    <div class="sec-h rev">
-      <div class="lbl">Portfolio</div>
-      <h2>Real Work.<br>Real Results.</h2>
-      <p>Browse by category — click "Open in Drive" to watch in full quality.</p>
-    </div>
-    <div class="tabs rev d1">
-      <button class="tb on" onclick="fp('all',this)">All Work</button>
-      <button class="tb" onclick="fp('ads',this)">Video Ads</button>
-      <button class="tb" onclick="fp('ai',this)">AI Marketing</button>
-      <button class="tb" onclick="fp('basic',this)">Basic Editing</button>
-      <button class="tb" onclick="fp('meta',this)">Meta & TikTok</button>
-    </div>
-    <div class="pgrid" id="pgrid">
-      <div class="pi big" data-cat="ads">
-        <div class="pfw"><iframe src="https://drive.google.com/embeddedfolderview?id=13yUvfFJQfkA--ahAT6d-HsA8PkZ8zkuR#grid" loading="lazy" title="Video Ads"></iframe></div>
-        <a class="pdb" href="https://drive.google.com/drive/folders/13yUvfFJQfkA--ahAT6d-HsA8PkZ8zkuR" target="_blank">
-          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15,3 21,3 21,9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Open in Drive
-        </a>
-        <div class="poi"><h4>Video Ads</h4><span>High-Converting Ad Edits</span></div>
-      </div>
-      <div class="pi" data-cat="ai">
-        <div class="pfw"><iframe src="https://drive.google.com/embeddedfolderview?id=13lr2cm6lom48Af6mSB6up-6fuF3cYInx#grid" loading="lazy" title="AI Marketing"></iframe></div>
-        <a class="pdb" href="https://drive.google.com/drive/folders/13lr2cm6lom48Af6mSB6up-6fuF3cYInx" target="_blank">
-          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15,3 21,3 21,9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Open in Drive
-        </a>
-        <div class="poi"><h4>AI Marketing</h4><span>AI-Powered Content</span></div>
-      </div>
-      <div class="pi" data-cat="basic">
-        <div class="pfw"><iframe src="https://drive.google.com/embeddedfolderview?id=1lgub2qYr8YDYzapV9F7eKCCKVhnxp4nC#grid" loading="lazy" title="Basic Editing"></iframe></div>
-        <a class="pdb" href="https://drive.google.com/drive/folders/1lgub2qYr8YDYzapV9F7eKCCKVhnxp4nC" target="_blank">
-          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15,3 21,3 21,9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Open in Drive
-        </a>
-        <div class="poi"><h4>Basic Editing</h4><span>Clean & Professional</span></div>
-      </div>
-      <div class="pi big" data-cat="meta">
-        <div class="pfw"><iframe src="https://drive.google.com/embeddedfolderview?id=19fNCD6UcTLBnC0hlseE9pwTcbjosBZwh#grid" loading="lazy" title="Meta TikTok Ads"></iframe></div>
-        <a class="pdb" href="https://drive.google.com/drive/folders/19fNCD6UcTLBnC0hlseE9pwTcbjosBZwh" target="_blank">
-          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15,3 21,3 21,9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Open in Drive
-        </a>
-        <div class="poi"><h4>Meta & TikTok Ads</h4><span>Viral Short-Form Content</span></div>
-      </div>
-    </div>
-  </div>
-</section>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto items-center px-4 sm:px-0">
+                <div class="bg-slate-950 border border-white/10 rounded-3xl p-6 flex flex-col h-full transition-all duration-500 hover:-translate-y-2">
+                    <div class="mb-4">
+                        <h4 class="text-xl md:text-2xl font-bold text-white">Starter</h4>
+                    </div>
+                    <div class="mb-6"><span class="text-4xl font-black text-white">$199</span></div>
+                    <p class="text-gray-400 text-sm mb-8">Perfect for testing the waters.</p>
+                    <ul class="space-y-4 mb-8 flex-1">
+                        <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="text-cyan-400 w-5 h-5 shrink-0"></i> <span class="text-gray-300 text-sm">Short-form Edits</span></li>
+                        <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="text-cyan-400 w-5 h-5 shrink-0"></i> <span class="text-gray-300 text-sm">Basic Hooks</span></li>
+                    </ul>
+                    <a href="https://wa.me/YOUR_PHONE_NUMBER_HERE" class="w-full py-3.5 rounded-xl font-bold bg-white/10 hover:bg-white/20 text-white text-center">Contact Us</a>
+                </div>
 
-<!-- ABOUT -->
-<section id="about">
-  <div class="orb" style="width:360px;height:360px;top:50%;left:-80px;background:rgba(139,92,246,.07)"></div>
-  <div class="wrap">
-    <div class="about-i">
-      <div class="about-text rev">
-        <div class="lbl">About Us</div>
-        <h2>Built on Real Work,<br>Not Fake Numbers</h2>
-        <p>We are <span class="hl">Pal Editing Agency</span>, focused on creating high-quality video content for brands, creators, and businesses.</p>
-        <p>We specialize in <span class="hl">video ads, short-form content, and AI-powered video production</span>. Our goal is simple — help our clients grow with engaging, high-converting videos.</p>
-        <p>We work with international clients and focus on <span class="hl">fast delivery, clear communication, and results-driven editing</span>.</p>
-        <div style="margin-top:28px;display:flex;gap:12px;flex-wrap:wrap">
-          <a href="#portfolio" class="btn btn-p">See Our Work →</a>
-          <a href="mailto:Palagencyofficial@gmail.com" class="btn btn-o">Get in Touch</a>
+                <div class="bg-gradient-to-b from-slate-800 to-slate-900 border border-cyan-500/50 shadow-[0_0_40px_rgba(6,182,212,0.15)] md:-translate-y-4 z-10 rounded-3xl p-6 flex flex-col h-full relative">
+                    <div class="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full bg-cyan-500 text-slate-950 text-xs font-bold uppercase tracking-wider">⭐ Best Value</div>
+                    <div class="mb-4 mt-2">
+                        <h4 class="text-xl md:text-2xl font-bold text-white">Growth</h4>
+                    </div>
+                    <div class="mb-6"><span class="text-4xl font-black text-white">$499</span></div>
+                    <p class="text-gray-400 text-sm mb-8">High-converting system for scaling.</p>
+                    <ul class="space-y-4 mb-8 flex-1">
+                        <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="text-cyan-400 w-5 h-5 shrink-0"></i> <span class="text-gray-300 text-sm">High-Retention Videos</span></li>
+                        <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="text-cyan-400 w-5 h-5 shrink-0"></i> <span class="text-gray-300 text-sm">Advanced Hook Engineering</span></li>
+                    </ul>
+                    <a href="https://wa.me/YOUR_PHONE_NUMBER_HERE" class="w-full py-3.5 rounded-xl font-bold bg-cyan-500 hover:bg-cyan-400 text-slate-950 text-center">Contact Us</a>
+                </div>
+
+                <div class="bg-slate-950 border border-white/10 rounded-3xl p-6 flex flex-col h-full transition-all duration-500 hover:-translate-y-2">
+                    <div class="mb-4">
+                        <h4 class="text-xl md:text-2xl font-bold text-white">Premium</h4>
+                    </div>
+                    <div class="mb-6"><span class="text-4xl font-black text-white">$1,999</span></div>
+                    <p class="text-gray-400 text-sm mb-8">Full content engine & AI production.</p>
+                    <ul class="space-y-4 mb-8 flex-1">
+                        <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="text-cyan-400 w-5 h-5 shrink-0"></i> <span class="text-gray-300 text-sm">Full Month Content</span></li>
+                        <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="text-cyan-400 w-5 h-5 shrink-0"></i> <span class="text-gray-300 text-sm">Dedicated Editor</span></li>
+                    </ul>
+                    <a href="https://wa.me/YOUR_PHONE_NUMBER_HERE" class="w-full py-3.5 rounded-xl font-bold bg-white/10 hover:bg-white/20 text-white text-center">Contact Us</a>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="about-card rev d2">
-        <div class="founder-photo">K<span class="photo-label">✓</span></div>
-        <div class="founder-name">Khokon</div>
-        <div class="founder-title">Founder & Creative Editor</div>
-        <div class="founder-bio">I help brands and creators grow through powerful video content. Focused on storytelling, audience psychology, and high-converting edits that drive real results.</div>
-        <div class="founder-quote">"I don't just edit — I understand what makes people stop, watch, and take action."</div>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<!-- PROCESS -->
-<section id="process">
-  <div class="orb" style="width:380px;height:380px;top:0;left:50%;transform:translateX(-50%);background:rgba(139,92,246,.06)"></div>
-  <div class="wrap">
-    <div class="sec-h rev center">
-      <div class="lbl">How It Works</div>
-      <h2>Simple Process,<br>Stunning Results</h2>
-    </div>
-    <div class="pgr">
-      <div class="step rev d1"><div class="snum">01</div><h4>Brief & Vision</h4><p>Share your goals, references, and footage. We align on vision from day one.</p></div>
-      <div class="step rev d2"><div class="snum">02</div><h4>Edit & Produce</h4><p>We handle cuts, color, motion, and audio. Every frame is intentional.</p></div>
-      <div class="step rev d3"><div class="snum">03</div><h4>Review & Revise</h4><p>Draft in 48h. Unlimited revisions until you're satisfied.</p></div>
-      <div class="step rev d4"><div class="snum">04</div><h4>Deliver & Publish</h4><p>Export-ready files for every platform. Launch and grow.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- PRICING -->
-<section id="pricing">
-  <div class="wrap">
-    <div class="sec-h rev center">
-      <div class="lbl">Pricing</div>
-      <h2>Clear Pricing,<br>Premium Quality</h2>
-      <p>No hidden fees. Secure payment via Upwork. Auto-detects your region.</p>
-    </div>
-    <div class="ct-wrap rev d1">
-      <div class="ct">
-        <button class="cb" id="bi" onclick="setC('INR')">🇮🇳 ₹ INR</button>
-        <button class="cb" id="bu" onclick="setC('USD')">🌐 $ USD</button>
-      </div>
-      <div class="cloc" id="cloc">🔍 Detecting your location...</div>
-    </div>
-    <div class="pgrid2">
-      <div class="pc rev d1">
-        <div class="pname">Starter</div>
-        <div class="pprice"><span class="ps">$</span><span class="pa" data-usd="199" data-inr="16,499">199</span><span class="per pp-p" data-usd="/project" data-inr="/project">/project</span></div>
-        <div class="pdesc">Perfect for single video ads or content pieces</div>
-        <div class="pdiv"></div>
-        <ul class="pfl">
-          <li><span class="ck">✦</span><span>Up to <strong>3 min</strong> video</span></li>
-          <li><span class="ck">✦</span><span><strong>2 rounds</strong> of revisions</span></li>
-          <li><span class="ck">✦</span><span>Color grading & audio sync</span></li>
-          <li><span class="ck">✦</span><span>Subtitles & captions</span></li>
-          <li><span class="ck">✦</span><span><strong>48-hour</strong> delivery</span></li>
-          <li><span class="ck">✦</span><span>1 platform export</span></li>
-        </ul>
-        <a href="https://www.upwork.com/freelancers/~01064a0e6a2c24bf97" target="_blank" class="btn btn-o" style="width:100%;justify-content:center">Hire on Upwork</a>
-      </div>
-      <div class="pc ft rev d2">
-        <div class="pbadge">Best Value</div>
-        <div class="pname">Growth</div>
-        <div class="pprice"><span class="ps">$</span><span class="pa" data-usd="499" data-inr="41,499">499</span><span class="per pp-p" data-usd="/project" data-inr="/project">/project</span></div>
-        <div class="pdesc">For brands serious about content performance</div>
-        <div class="pdiv"></div>
-        <ul class="pfl">
-          <li><span class="ck">✦</span><span>Up to <strong>10 min</strong> video</span></li>
-          <li><span class="ck">✦</span><span><strong>Unlimited</strong> revisions</span></li>
-          <li><span class="ck">✦</span><span>VFX & motion graphics</span></li>
-          <li><span class="ck">✦</span><span>AI voiceover integration</span></li>
-          <li><span class="ck">✦</span><span><strong>All platform</strong> exports</span></li>
-          <li><span class="ck">✦</span><span>Priority <strong>24h</strong> delivery</span></li>
-        </ul>
-        <a href="https://www.upwork.com/freelancers/~01064a0e6a2c24bf97" target="_blank" class="btn btn-p" style="width:100%;justify-content:center">Hire on Upwork →</a>
-      </div>
-      <div class="pc rev d3">
-        <div class="pname">Agency</div>
-        <div class="pprice"><span class="ps">$</span><span class="pa" data-usd="1,999" data-inr="1,66,499">1,999</span><span class="per pp-p" data-usd="/mo" data-inr="/mo">/mo</span></div>
-        <div class="pdesc">Ongoing retainer for agencies & high-volume clients</div>
-        <div class="pdiv"></div>
-        <ul class="pfl">
-          <li><span class="ck">✦</span><span><strong>10 videos/month</strong></span></li>
-          <li><span class="ck">✦</span><span>Dedicated editor assigned</span></li>
-          <li><span class="ck">✦</span><span>AI production included</span></li>
-          <li><span class="ck">✦</span><span>Same-day turnaround</span></li>
-          <li><span class="ck">✦</span><span>Direct communication</span></li>
-          <li><span class="ck">✦</span><span>Monthly strategy call</span></li>
-        </ul>
-        <a href="mailto:Palagencyofficial@gmail.com" class="btn btn-o" style="width:100%;justify-content:center">Contact Us</a>
-      </div>
-    </div>
-    <div class="upwork-note rev">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-      All payments are secure via Upwork escrow — your money is protected until you approve the work.
-    </div>
-  </div>
-</section>
-
-<!-- TESTIMONIALS -->
-<section id="testimonials">
-  <div class="wrap">
-    <div class="sec-h rev">
-      <div class="lbl">Client Reviews</div>
-      <h2>What Our Clients<br>Say About Us</h2>
-    </div>
-  </div>
-  <div class="tw">
-    <div class="tt">
-      <div class="tc"><div class="tstars">★★★★★</div><p class="ttext">"Delivered exactly what I needed — fast, clean, and professional. The video ad performed great on Meta. Will hire again!"</p><div class="tauthor"><div class="tav">JR</div><div><div class="tan">Jake R.</div><div class="tar">E-Commerce Brand — USA</div></div></div></div>
-      <div class="tc"><div class="tstars">★★★★★</div><p class="ttext">"The AI video content looked incredible. Fast turnaround, great communication throughout. Highly recommend Pal Editing."</p><div class="tauthor"><div class="tav" style="background:linear-gradient(135deg,var(--purple),var(--pink))">SM</div><div><div class="tan">Sarah M.</div><div class="tar">SaaS Startup — UK</div></div></div></div>
-      <div class="tc"><div class="tstars">★★★★★</div><p class="ttext">"Our TikTok engagement went up significantly after working with them. Very creative editor who understands short-form content."</p><div class="tauthor"><div class="tav" style="background:linear-gradient(135deg,#f472b6,#fb923c)">AK</div><div><div class="tan">Ahmed K.</div><div class="tar">Content Creator — UAE</div></div></div></div>
-      <div class="tc"><div class="tstars">★★★★★</div><p class="ttext">"Professional, fast, and easy to work with. The video came out better than I imagined. 5 stars easily."</p><div class="tauthor"><div class="tav" style="background:linear-gradient(135deg,#22c55e,#16a34a)">LC</div><div><div class="tan">Laura C.</div><div class="tar">Marketing Agency — Canada</div></div></div></div>
-      <div class="tc"><div class="tstars">★★★★★</div><p class="ttext">"The editing style is unique and engaging. My YouTube retention improved noticeably after the first video. Great work!"</p><div class="tauthor"><div class="tav" style="background:linear-gradient(135deg,#f59e0b,#ef4444)">MP</div><div><div class="tan">Marco P.</div><div class="tar">YouTuber — Italy</div></div></div></div>
-      <!-- duplicates for infinite loop -->
-      <div class="tc"><div class="tstars">★★★★★</div><p class="ttext">"Delivered exactly what I needed — fast, clean, and professional. The video ad performed great on Meta. Will hire again!"</p><div class="tauthor"><div class="tav">JR</div><div><div class="tan">Jake R.</div><div class="tar">E-Commerce Brand — USA</div></div></div></div>
-      <div class="tc"><div class="tstars">★★★★★</div><p class="ttext">"The AI video content looked incredible. Fast turnaround, great communication throughout. Highly recommend Pal Editing."</p><div class="tauthor"><div class="tav" style="background:linear-gradient(135deg,var(--purple),var(--pink))">SM</div><div><div class="tan">Sarah M.</div><div class="tar">SaaS Startup — UK</div></div></div></div>
-      <div class="tc"><div class="tstars">★★★★★</div><p class="ttext">"Our TikTok engagement went up significantly after working with them. Very creative editor who understands short-form content."</p><div class="tauthor"><div class="tav" style="background:linear-gradient(135deg,#f472b6,#fb923c)">AK</div><div><div class="tan">Ahmed K.</div><div class="tar">Content Creator — UAE</div></div></div></div>
-      <div class="tc"><div class="tstars">★★★★★</div><p class="ttext">"Professional, fast, and easy to work with. The video came out better than I imagined. 5 stars easily."</p><div class="tauthor"><div class="tav" style="background:linear-gradient(135deg,#22c55e,#16a34a)">LC</div><div><div class="tan">Laura C.</div><div class="tar">Marketing Agency — Canada</div></div></div></div>
-    </div>
-  </div>
-</section>
-
-<!-- UPWORK -->
-<section id="upwork">
-  <div class="orb" style="width:380px;height:380px;top:-60px;left:-60px;background:rgba(20,168,0,.05)"></div>
-  <div class="wrap">
-    <div class="uw-i">
-      <div class="uw-c rev">
-        <div class="lbl">Hire Us</div>
-        <h2>Work With Us on<br><span style="color:#14a800">Upwork</span> — Risk Free</h2>
-        <p>All payments are protected via Upwork escrow. Start with a small test project — you only pay when you're satisfied with the work.</p>
-        <div class="uw-bs">
-          <div class="ub"><span class="ic">✓</span>Secure Escrow Payment</div>
-          <div class="ub"><span class="ic">✓</span>5.0 Star Rating</div>
-          <div class="ub"><span class="ic">✓</span>Fast Communication</div>
-          <div class="ub"><span class="ic">✓</span>Satisfaction Guaranteed</div>
-        </div>
-        <a href="https://www.upwork.com/freelancers/~01064a0e6a2c24bf97" target="_blank" rel="noopener" class="btn btn-g">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15,3 21,3 21,9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-          Hire Me on Upwork
-        </a>
-      </div>
-      <div class="uw-v rev d2">
-        <div class="uw-top">
-          <div class="uw-logo-text">Upwork</div>
-          <div style="font-size:11px;color:var(--t2);margin-bottom:12px">Freelancer Profile</div>
-          <div class="uw-r">5.0</div>
-          <div class="uw-s">★★★★★</div>
-          <div class="uw-j">Top Rated Freelancer</div>
-        </div>
-        <div class="uw-bot">
-          <div class="uw-stat"><div class="n" style="color:var(--blue)">50+</div><div class="l">Jobs Done</div></div>
-          <div class="uw-stat"><div class="n" style="color:var(--purple)">100%</div><div class="l">Job Success</div></div>
-          <div class="uw-stat"><div class="n" style="color:var(--green)">48h</div><div class="l">Avg. Delivery</div></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer>
-  <div class="wrap">
-    <div class="fgrid">
-      <div class="fb">
-        <a href="#" class="logo">Pal<em>Editing</em></a>
-        <p>We don't just edit videos — we create content that helps brands grow. Fast delivery, clear communication, real results.</p>
-        <div class="fsoc">
-          <a href="#" class="sl">𝕏</a>
-          <a href="#" class="sl">in</a>
-          <a href="#" class="sl">▶</a>
-          <a href="https://www.upwork.com/freelancers/~01064a0e6a2c24bf97" target="_blank" class="sl">U</a>
-        </div>
-      </div>
-      <div class="fc">
-        <h5>Services</h5>
-        <ul>
-          <li><a href="#services">Video Ads</a></li>
-          <li><a href="#services">AI Marketing</a></li>
-          <li><a href="#services">Short Form Content</a></li>
-          <li><a href="#portfolio">View Portfolio</a></li>
-        </ul>
-      </div>
-      <div class="fc">
-        <h5>Company</h5>
-        <ul>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#tools">Our Tools</a></li>
-          <li><a href="#pricing">Pricing</a></li>
-          <li><a href="#testimonials">Reviews</a></li>
-        </ul>
-      </div>
-      <div class="fc">
-        <h5>Contact</h5>
-        <ul>
-          <li><a href="mailto:Palagencyofficial@gmail.com">Palagencyofficial@gmail.com</a></li>
-          <li><a href="https://www.upwork.com/freelancers/~01064a0e6a2c24bf97" target="_blank">Upwork Profile</a></li>
-          <li><a href="https://wa.me/" target="_blank">WhatsApp</a></li>
-        </ul>
-        <div style="margin-top:18px;font-size:12px;color:var(--t2)">🌍 Serving clients worldwide</div>
-      </div>
-    </div>
-    <div class="fbot">
-      <span>© 2025 Pal Editing Agency. All rights reserved.</span>
-      <span style="display:flex;gap:18px"><a href="#">Privacy</a><a href="#">Terms</a></span>
-    </div>
-  </div>
-</footer>
-
-<!-- CHAT WIDGET -->
-<div class="cw">
-  <div class="cpanel" id="cpanel">
-    <div class="ch">
-      <div class="ch-l">
-        <div class="cav">🤖</div>
-        <div class="chi"><strong>Pal AI Assistant</strong><span>● Online now</span></div>
-      </div>
-      <button class="ch-x" onclick="toggleChat()">✕</button>
-    </div>
-    <div class="cbody" id="cbody">
-      <div class="cm bot">👋 Hey! I'm here to help. What kind of video content do you need?</div>
-    </div>
-    <div class="cqr" id="cqr">
-      <button class="cqrb" onclick="qr('Video Ads')">Video Ads</button>
-      <button class="cqrb" onclick="qr('AI Video')">AI Video</button>
-      <button class="cqrb" onclick="qr('Short Form')">Short Form</button>
-      <button class="cqrb" onclick="qr('Pricing')">Pricing</button>
-    </div>
-    <div class="cir">
-      <input type="text" class="cinp" id="cinp" placeholder="Type your message..." />
-      <button class="csend" id="csend">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
-      </button>
-    </div>
-  </div>
-  <button class="cbtn" id="ctog" onclick="toggleChat()">
-    <span class="cnotif" id="cnotif">1</span>
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
-  </button>
-</div>
-
-<script src="script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+    <script src="script.js"></script>
 </body>
 </html>
